@@ -105,7 +105,7 @@ function main_page()    {
                 fp: -1
             });
             if(grade_gpa($course.text()) !== -1 )  {
-                fill_percent($course, "https://powerschool.sas.edu.sg/guardian/" + $course.attr('href'), courses, "fp");
+                fill_percent($course, "https://powerschool.sas.edu.sg/guardian/" + $course.attr('href'), courses[courses.length - 1], "fp");
             }
         }
         
